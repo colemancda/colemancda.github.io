@@ -27,9 +27,10 @@ Becuase I found that import syntax hideous, through a lot of trial and error I d
 [ExSwiftMergeRequest]:https://github.com/pNre/ExSwift/pull/76
 [CocoaLumberjackMergeRequest]: https://github.com/CocoaLumberjack/CocoaLumberjack/pull/341
 
-###1. Change the project's build architechures and supported platforms.
+###1. Change the project's valid architectures and supported platforms.
 
-This should change your framework's and test unit's build architechures and supported platforms as well. If not, then manually change them to inherit from the project's build settings.
+This should change your framework's and test unit's valid architectures and supported platforms as well. If not, then manually change them to inherit from the project's build settings.
+
 ![Step One]({{ site.url }}/images/universalframeworkstep1.png)
 
 - Base SDK: I recommend OS X, but it will work with iOS too. Note that with with iOS as the base SDK, "My Mac" target is separated into 3 different targets.
@@ -38,5 +39,13 @@ This should change your framework's and test unit's build architechures and supp
 
 - Valid Architectures: ```arm64 armv7 armv7s i386 x86_64```
 
+###2. Change the search paths for the Unit Test bundle
 
+![Step Two]({{ site.url }}/images/universalframeworkstep2.png)
+
+- Runpath Search Paths: ```$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks```
+
+- Framework Search Paths: ```$(SDKROOT) $(inherited)```
+
+As long as your framework's code and dependencies (like Foundation & CoreData) will run on both iOS and OS X, this process will not fail.
 
