@@ -1,12 +1,39 @@
-# Site settings
-title: ColemanCDA
-email: alseycmiller@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Swift development blog
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://colemancda.github.io" # the base hostname & protocol for your site
-twitter_username: colemancda
-github_username:  colemancda
+# Title of your blog; shows in the header
+name: "ColemanCDA"
 
-# Build settings
+# Description of your content (will only be used on Google Search)
+description: "Swift development blog"
+
+# Your name. Will show in your footer + sidebar 
+author: "Alsey Coleman Miller"
+
+url: "http://colemancda.github.io"
+baseurl: ""
+
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
+author-bio: "I develop software in Swift and Objective-C"
+
+# Social Accounts (mine, as placeholders)
+
+twitter: colemancda
+github: colemancda
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+#ga_domain: m3xm.github.io
+#ga_tracking_id: UA-47727049-1
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+
 markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
