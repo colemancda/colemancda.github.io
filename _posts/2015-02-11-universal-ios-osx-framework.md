@@ -21,7 +21,7 @@ With iOS 8, Apple has given us the ability create dynamic frameworks for iOS, so
 #endif
 {% endhighlight js %}
 
-Becuase I found that import syntax hideous, through a lot of trial and error I discovered how to make a dynamic framework compile for iOS and OS X, as well as have a single universal test unit bundle. I mainly developed this process for [NetworkObjects][NetworkObjects], but since then I've submitted merge requests for frameworks I use like [ExSwift][ExSwiftMergeRequest] and [CocoaLumberjack][CocoaLumberjackMergeRequest].
+Because I found using compiler directives clumsy, through a lot of trial and error I discovered how to make a dynamic framework compile for iOS and OS X, as well as have a single universal test unit bundle. I mainly developed this process for [NetworkObjects][NetworkObjects], but since then I've submitted merge requests for frameworks I use like [ExSwift][ExSwiftMergeRequest] and [CocoaLumberjack][CocoaLumberjackMergeRequest].
 
 [NetworkObjects]: https://github.com/colemancda/NetworkObjects
 [ExSwiftMergeRequest]:https://github.com/pNre/ExSwift/pull/76
@@ -47,5 +47,5 @@ This should change your framework's and test unit's valid architectures and supp
 
 - Framework Search Paths: ```$(SDKROOT) $(inherited)```
 
-As long as your framework's code and dependencies (like Foundation & CoreData) will run on both iOS and OS X, this process can be applied to any framework written in Objective-C or Swift.
+As long as your framework's code and dependencies (like Foundation & CoreData) will run on both iOS and OS X, this process can be applied to any framework written in Objective-C or Swift. If you have any questions, you can contact me on [Gitter](https://gitter.im/colemancda/colemancda.github.io).
 
