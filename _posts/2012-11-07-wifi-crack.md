@@ -4,7 +4,7 @@ title:  "Wi-Fi Crack"
 date:   2012-11-07
 categories: Programming
 ---
-![Picture](https://www.macupdate.com/images/icons256/46004.pngs)
+![Picture](https://www.macupdate.com/images/icons256/46004.png)
 
 This is a upgraded version of my “WEP Crack” app. It supports WEP cracking. This is a GUI for Aircrack-NG that uses the “airport” command line tool included with OS X and CoreWLAN to put your card into monitor mode to capture packets.
 
