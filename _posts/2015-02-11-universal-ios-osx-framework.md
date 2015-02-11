@@ -5,11 +5,11 @@ date:   2015-02-11
 categories: Programming
 ---
 
-With iOS 8, Apple has given us the ability create dynamic frameworks for iOS, something that has always been availible for OS X. Apart from the fact that your app and extensions can share the same code, Apple is encouraging developers to share code between iOS and OS X. Apple's describes an example of how to do so in its WWDC 2014 Session 223 video. The problem with the described steps is that it build 2 separate targets, which normally wouldn't be a big deal, except for the following inconviences:
+With iOS 8, Apple has given us the ability create dynamic frameworks for iOS, something that has always been availible for OS X. Apart from the fact that your app and extensions can share the same code, Apple is encouraging developers to share code between iOS and OS X. Apple's describes an example of how to do so in its WWDC 2014 Session 223 video. The problem with the described steps is that it will build two separate targets, which normally wouldn't be a big deal, except for the following inconveniences:
 
-- 2 separate framework targets always have to keep their compiled sources and dependencies in sync
+- 2 separate framework targets always have to keep their sources and dependencies in sync
 
-- 2 separate testing unit bundles are required and also need to keep their sources and depesdencies in sync
+- 2 separate testing unit bundles are required and also need to keep their sources and dependencies in sync
 
 - Code that will use your framework that will also build for iOS and OS X will require import statements like:
 
@@ -21,7 +21,7 @@ With iOS 8, Apple has given us the ability create dynamic frameworks for iOS, so
 #endif
 {% endhighlight js %}
 
-Becuase I found that import syntax hideous, through a lot of trial and error I discovered how to make a dynamic framework compile for iOS and OS X, as well as have a single universal test unit bundle. I mainly developed this process for [NetworkObjects][NetworkObjects], but since then I've been making merge requests for frameworks I use like [ExSwift][ExSwiftMergeRequest] and [CocoaLumberjack][CocoaLumberjackMergeRequest].
+Becuase I found that import syntax hideous, through a lot of trial and error I discovered how to make a dynamic framework compile for iOS and OS X, as well as have a single universal test unit bundle. I mainly developed this process for [NetworkObjects][NetworkObjects], but since then I've submitted merge requests for frameworks I use like [ExSwift][ExSwiftMergeRequest] and [CocoaLumberjack][CocoaLumberjackMergeRequest].
 
 [NetworkObjects]: https://github.com/colemancda/NetworkObjects
 [ExSwiftMergeRequest]:https://github.com/pNre/ExSwift/pull/76
