@@ -47,5 +47,5 @@ This should change your framework's and test unit's valid architectures and supp
 
 - Framework Search Paths: ```$(SDKROOT) $(inherited)```
 
-As long as your framework's code and dependencies (like Foundation & CoreData) will run on both iOS and OS X, this process will not fail.
+As long as your framework's code and dependencies (like Foundation & CoreData) will run on both iOS and OS X, this process can be applied to any framework written in Objective-C or Swift.
 
