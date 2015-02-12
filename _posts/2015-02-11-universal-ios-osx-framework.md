@@ -19,7 +19,7 @@ With iOS 8, Apple has given us the ability create dynamic frameworks for iOS, so
 #else
     import MyFrameworkOSX
 #endif
-{% endhighlight js %}
+{% endhighlight %}
 
 Because I found using compiler directives clumsy, through a lot of trial and error I discovered how to make a dynamic framework compile for iOS and OS X, as well as have a single universal test unit bundle. I mainly developed this process for [NetworkObjects][NetworkObjects], but since then I've submitted merge requests for frameworks I use like [ExSwift][ExSwiftMergeRequest] and [CocoaLumberjack][CocoaLumberjackMergeRequest].
 
