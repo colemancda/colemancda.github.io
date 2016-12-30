@@ -2,38 +2,20 @@
 layout: default
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+# It's Alive!
 
-## Research Interest
+<blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">I think we just created the world&#39;s first pure Swift app on Android with Fiber2D. Shout out <a href="https://twitter.com/gonzalolarralde">@gonzalolarralde</a> for making this possible. [1/3] <a href="https://t.co/nHSAhO4J0f">pic.twitter.com/nHSAhO4J0f</a></p>&mdash; Andrey Volodin (@s1ddok) <a href="https://twitter.com/s1ddok/status/814218861314736129">December 28, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
-
-## Publications
-
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
-
-## Typography
-
-This is a [link](http://google.com). Something *italics* and something **bold**.
-
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
+> I think we just created the world's first pure Swift app on Android with Fiber2D. — Andrey Volodin (@s1ddok)
 
 ---
 
-Here is a blockquote
+## [OpenStack Foundation Summit v2.1.0 Released](https://github.com/OpenStack-mobile/summit-app-ios/releases/tag/2.1.0)
 
-> To a great mind, nothing is little
+## [Handbrakes released after 13 years in the *danger zone*](http://www.macrumors.com/2016/12/27/video-converter-handbrake-1-0-released-for-mac/)
 
-## References
+## [Super Mario Run released only on iOS](https://t.co/ZY6BSd8Cz5)
 
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+---
+
+
