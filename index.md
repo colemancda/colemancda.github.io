@@ -10,6 +10,10 @@ layout: default
 
 ---
 
+## [JTAppleCalendar: The Unofficial Swift Apple Calendar Library](https://github.com/patchthecode/JTAppleCalendar)
+
+## [Punic: Carthage in Python?](https://github.com/schwa/punic)
+
 ## [iPhone is still popular, while Apple Watch is a fad](https://techcrunch.com/2016/12/29/iphone-7-was-a-top-holiday-gift-but-apple-watch-is-fading/)
 
 ## [Coca-Cola closes Founders startup incubator](https://techcrunch.com/2016/12/29/coca-cola-reportedly-closes-founders-startup-incubator/)
