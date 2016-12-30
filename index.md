@@ -16,7 +16,7 @@ layout: default
 
 ## [Super Mario Run released only on iOS](http://www.macworld.com/article/3151403/ios/super-mario-run-brings-nintendos-classic-fun-to-iosand-yes-its-totally-worth-10.html)
 
-## [Escucha nuestro Pod Cast en Español 🎧](http://www.cocoalima.com/mainswift)
+## [Escucha nuestro podcast en Español 🎧](http://www.cocoalima.com/mainswift)
 
 ---
 
