@@ -1,6 +1,9 @@
 @import "vars";
 
 .content {
+		h1, h2, h3, h4, h5 {
+				color: #1DA9A2; 
+		}
     a:hover {
         text-decoration: none;
     }
