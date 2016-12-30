@@ -2,7 +2,17 @@
 layout: default
 ---
 
+# [RemObjects releases "Island" native compiler, moves away from transpilers](http://elementscompiler.com/elements/Island/)
+
+Island lets you use all three of the Elements languages – Oxygene, C# and Swift – to write native code for Windows and Linux. 
+
+# [Native Java compiler](https://github.com/bugvm/bugvm)
+
+BugVM compiles JVM bytecode to native machine code and then links the compiled native code with other native libraries or frameworks to produce targeted platform App.
+
 # [WeChat releases communication library](https://github.com/Tencent/mars)
+
+Mars is a cross-platform infrastructure component developed by WeChat Mobile Team. It is proved to be effective by billions of Wechat users.
 
 # [It's Alive!](https://github.com/s1ddok/Fiber2D)
 
