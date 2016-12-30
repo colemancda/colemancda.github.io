@@ -10,6 +10,8 @@ layout: default
 
 ---
 
+## [Reference counted releases in Swift](https://www.cocoawithlove.com/blog/resources-releases-reentrancy.html)
+
 ## [OpenStack Foundation Summit v2.1.0 Released](https://github.com/OpenStack-mobile/summit-app-ios/releases/tag/2.1.0)
 
 ## [Handbrakes released after 13 years in the *danger zone*](http://www.macrumors.com/2016/12/27/video-converter-handbrake-1-0-released-for-mac/)
