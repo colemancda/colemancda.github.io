@@ -10,6 +10,8 @@ layout: default
 
 ---
 
+## [Auto-Layout for Sketch](https://medium.com/sketch-app-sources/introducing-auto-layout-for-sketch-24e7b5d068f9#.65wr6hfs9)
+
 ## [JTAppleCalendar: The Unofficial Swift Apple Calendar Library](https://github.com/patchthecode/JTAppleCalendar)
 
 ## [Punic: Carthage in Python?](https://github.com/schwa/punic)
