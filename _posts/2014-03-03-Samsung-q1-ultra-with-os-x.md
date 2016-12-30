@@ -2,7 +2,6 @@
 layout: post
 title:  "Samsung Q1 Ultra with OS X"
 date:   2014-03-03
-categories: Hackintosh
 ---
 
 ![Picture]({{ site.url }}/images/q1ultra.png)

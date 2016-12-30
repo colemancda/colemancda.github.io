@@ -2,7 +2,6 @@
 layout: post
 title:  "Wi-Fi Crack"
 date:   2012-11-07
-categories: Programming
 ---
 ![Picture](https://www.macupdate.com/images/icons256/46004.png)
 

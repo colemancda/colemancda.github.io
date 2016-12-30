@@ -2,7 +2,6 @@
 layout: post
 title:  "NetworkObjects"
 date:   2013-11-15
-categories: Programming
 ---
 ![Picture]({{ site.url }}/images/networkobjects.png)
 

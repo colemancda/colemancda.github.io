@@ -2,7 +2,6 @@
 layout: post
 title:  "Embedded Swift frameworks in OS X command line tools"
 date:   2015-02-12
-categories: Programming
 ---
 
 With Swift, Apple has changed how standard libraries are shipped. With Objective-C, all of the standard libraries, system frameworks, and the runtime itself, were shipped with the OS. With Swift, Apple wanted the ability to quickly deprecate parts of the Swift Standard Library and also add new features. While these changes do break apps at the source code level (and Apple has even made migration tools for Swift 1.2), it would be a huge problem if shipped apps started to break because the standard library they are linked against has an incompatible API.

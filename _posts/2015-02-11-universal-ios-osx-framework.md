@@ -2,7 +2,6 @@
 layout: post
 title:  "Universal iOS / OS X Frameworks"
 date:   2015-02-11
-categories: Programming
 ---
 
 With iOS 8, Apple has given us the ability to create dynamic frameworks for iOS, something that has always been availible for OS X. Apart from the fact that your app and extensions can share the same code, Apple is encouraging developers to share code between iOS and OS X. Apple's describes an example of how to do so in its WWDC 2014 Session 223 video. The problem with the described steps is that it will build two separate targets, which normally wouldn't be a big deal, except for the following inconveniences:

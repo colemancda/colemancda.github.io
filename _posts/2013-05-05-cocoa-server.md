@@ -2,7 +2,6 @@
 layout: post
 title:  "Cocoa Server"
 date:   2013-05-05
-categories: Job
 ---
 ![Picture]({{ site.url }}/images/colemanserver.png)
 

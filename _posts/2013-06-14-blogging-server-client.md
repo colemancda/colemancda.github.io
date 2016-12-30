@@ -2,7 +2,6 @@
 layout: post
 title:  "Blogging Server & Client"
 date:   2013-06-14
-categories: Programming
 ---
 ![Picture]({{ site.url }}/images/colemancdaserver.png)
 

@@ -2,7 +2,6 @@
 layout: post
 title:  "iMac G3 Case for my Hackintosh"
 date:   2012-05-30
-categories: Hackintosh
 ---
 ![Picture]({{ site.url }}/images/imacg3.jpg)
 

@@ -2,7 +2,6 @@
 layout: post
 title:  "TeclaLabs Job"
 date:   2013-02-13
-categories: Job
 ---
 ![Picture]({{ site.url }}/images/teclalabs.jpg)
 
