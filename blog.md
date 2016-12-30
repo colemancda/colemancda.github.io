@@ -8,11 +8,15 @@ layout: default
 
 # 2015
 
+- [Embedded Swift frameworks in OS X command line tools](2015/02/12/embedded-swift-frameworks-osx-command-line-tools)
+
 # 2014
 
 # 2013
 
 # 2012
+
+- [Personal Gaming Server](2012/08/21/Personal-gaming-server)
 
 - [Lego USB](/2012/05/31/lego-usb)
 
