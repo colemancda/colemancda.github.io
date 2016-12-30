@@ -14,7 +14,9 @@ layout: default
 
 ## [Handbrakes released after 13 years in the *danger zone*](http://www.macrumors.com/2016/12/27/video-converter-handbrake-1-0-released-for-mac/)
 
-## [Super Mario Run released only on iOS](https://t.co/ZY6BSd8Cz5)
+## [Super Mario Run released only on iOS](http://www.macworld.com/article/3151403/ios/super-mario-run-brings-nintendos-classic-fun-to-iosand-yes-its-totally-worth-10.html)
+
+## [Escucha nuestro Pod Cast en Español 🎧](http://www.cocoalima.com/mainswift)
 
 ---
 
