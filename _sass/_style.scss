@@ -23,7 +23,7 @@ a:not([href]), a:visited, a:link, a:hover {
 		text-decoration: none;
 	}
 	
-a:active { 
+a:not([href]), a:active { 
 			color: #5124E3; 
 			font-weight: 400; 
 			text-decoration: none;
@@ -62,6 +62,11 @@ hr {
     list-style-type: none;
     margin: 0 5px 0 10px;
 }
+
+.nav-list a {
+    color: #746DB0;
+}
+
 .alignable {
     display: inline-block;
 }
