@@ -17,17 +17,11 @@ body {
 	min-width: 288px
 }
 
-a:not([href]), a:visited, a:link, a:hover { 
+a:not([href]), a:visited, a:link, a:hover, a:active { 
 		color: #45BB3E; 
 		font-weight: 400; 
 		text-decoration: none;
 	}
-	
-a:not([href]), a:active { 
-			color: #5124E3; 
-			font-weight: 400; 
-			text-decoration: none;
-}
 
 p, li, .intro a { 
 	font-weight: 300; 
