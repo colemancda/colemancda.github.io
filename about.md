@@ -35,6 +35,7 @@ Seasoned iOS Developer experienced in designing and developing custom applicatio
 ## Experience
 
 ### MAG Technologies LLC
+
 #### Senior iOS Developer; Dallas, TX; July 2016 - Present
 
 Responsible for maintaining Objective-C / Swift codebase and working on new features for end-to-end encrypted iOS messaging app.
@@ -43,6 +44,7 @@ Responsible for maintaining Objective-C / Swift codebase and working on new feat
 - [iTunes Store](https://itunes.apple.com/us/app/sayfe-secure-private-messenger/id1050787926)
 
 ### Parkarr
+
 #### Senior iOS Developer; NYC, NY; February 2016 - July 2016
 
 Implemented improvements in Swift for application used to locate parking spots (as featured on ABC’s Shark Tank).
@@ -51,6 +53,7 @@ Implemented improvements in Swift for application used to locate parking spots (
 - [iTunes Store](https://itunes.apple.com/us/app/parkarr/id1061745625)
 
 ### Santex Group
+
 #### Lead Mobile Developer; Lima, Peru; July 2015 - Present
 
 Responsible for estimation, architecture, and development of various iOS apps for clients. Developed open source Swift libraries that were reused across various projects. Swift and open source evangelist.
@@ -61,6 +64,7 @@ Responsible for estimation, architecture, and development of various iOS apps fo
 - [MyVistage](https://itunes.apple.com/us/app/my-vistage/id891220703)
 
 ### Sysco SA
+
 #### Senior iOS Developer; Lima, Peru; March 2015 - July 2015
 
 Responsible for maintaining Objective-C codebase of a suite of apps for the management of kindergartens in Norway.
@@ -69,6 +73,7 @@ Responsible for maintaining Objective-C codebase of a suite of apps for the mana
 - [iTunes Store](https://itunes.apple.com/us/app/vigilo-foresatt-barnehage/id771731428)
 
 ### Unikey Technologies
+
 #### Senior iOS Developer; Winter Park, FL; September 2014 - March 2015
 
 Developed iOS application for unlocking your door via Bluetooth LE (as featured on ABC’s Shark Tank). Updated codebase for iOS 8, migrated Objective-C code to Swift, implemented Adaptive UI, and refactored code for internal framework targets. 
@@ -77,6 +82,7 @@ Developed iOS application for unlocking your door via Bluetooth LE (as featured 
 - [iTunes Store](https://itunes.apple.com/us/app/kevo-your-phone-is-now-your-key/id685604951)
 
 ### Voalte
+
 #### iOS Developer; Sarasota, FL; January 2014  - September 2014
 
 Responsible for debugging and increasing the performance of Voalte's iOS apps collaboratively with engineering team. Implemented concurrency, MVC design, and updated code for iOS 8. Also worked heavily with XMPP and REST APIs.
@@ -85,6 +91,7 @@ Responsible for debugging and increasing the performance of Voalte's iOS apps co
 - [iTunes Store](https://itunes.apple.com/us/app/voalte-one/id350193462)
 
 ### Tecla Labs
+
 #### iOS Developer; Lima, Peru; January 2013 - May 2013
 
 Worked as an iOS developer, creating new projects and supporting existing projects as needed. Developed a catalog app for a Peruvian jewelry company and worked on an iOS framework for rapid deployment of iOS apps for small businesses. Also worked on a Cocos2D runner game, social puzzle app, and Instagram-like app with image filters.
