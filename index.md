@@ -6,11 +6,17 @@ layout: default
 
 # Trending Software
 
+### [Intel releases native Java compiler for iOS](https://multi-os-engine.org)
+
+Multi-OS Engine provides a Java runtime and Java interfaces to iOS platform API to develop native iOS applications with native look and feel, native performance, and portability of common Java logic modules from your Android Apps. It comes fully integrated with Android Studio hosted on macOS or Windows and contains all the development tools needed to develop an iOS app and publish to the App Store.
+
+![Multi-OS Engine](https://doc.multi-os-engine.org/_images/intro1.png)
+
 ### [RemObjects releases "Island" native compiler, moves away from transpilers](http://elementscompiler.com/elements/Island/)
 
 Island lets you use all three of the Elements languages – Oxygene, C# and Swift – to write native code for Windows and Linux. 
 
-### [Native Java compiler](https://github.com/bugvm/bugvm)
+### [BugVM native Java compiler](https://github.com/bugvm/bugvm)
 
 BugVM compiles JVM bytecode to native machine code and then links the compiled native code with other native libraries or frameworks to produce targeted platform App.
 
