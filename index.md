@@ -34,13 +34,39 @@ Cross-platform video transcoder Handbrake reached a milestone over the holiday b
 
 As valuations plunge, venture capitalists are raising record amounts of cash.
 
+### [Coca-Cola closes Founders startup incubator](https://techcrunch.com/2016/12/29/coca-cola-reportedly-closes-founders-startup-incubator/)
+
+The company liked to find startups, even before they formed.
+
 ### [Fitbit is buying troubled smartwatch maker Pebble for around $40 million](https://techcrunch.com/2016/11/30/fitbit-pebble/)
 
 Despite being valued at $740 million in 2015.
 
-### [Coca-Cola closes Founders startup incubator](https://techcrunch.com/2016/12/29/coca-cola-reportedly-closes-founders-startup-incubator/)
+### [Smartwatch sales are tanking](https://techcrunch.com/2016/10/24/smartwatch-sales-are-tanking/)
 
-The company liked to find startups, even before they formed.
+Just 2.7 million units were shipped in Q3 2016 versus 5.6 million in Q3 2015. 
+
+# User Privacy
+
+### [2017 To be Year Of ‘Smart Home’ Hacking](http://www.cnbc.com/2016/12/25/suddenly-hot-smart-home-devices-are-ripe-for-hacking-experts-warn.html)
+
+In October, hackers took over 100,000 IoT devices and used them to block traffic to well-known websites, including Twitter and Netflix.
+
+### [Amazon Echo is spying on you 24/7](https://www.theguardian.com/technology/2015/nov/21/amazon-echo-alexa-home-robot-privacy-cloud)
+
+Big sister Alexa is constantly recording your private conversations and may even provide unsolicited advice in certain scenarios. ([Video Report](http://www.today.com/video/amazon-echo-and-google-home-are-always-on-sparking-privacy-concerns-837466691834))
+
+### [Police to use Amazon Echo "private" recordings as evidence in murder case](http://www.nytimes.com/2016/12/28/business/amazon-echo-murder-case-arkansas.html)
+
+“It’s such a massive gray area”
+
+### [Top personal assistant software break US child privacy law, experts warn](https://www.theguardian.com/technology/2016/may/26/amazon-echo-virtual-assistant-child-privacy-law)
+
+Storing voice recordings of people younger than 13 via Alexa, Google Home and Siri appears to flout the Children’s Online Privacy Protection Act.
+
+### [Want to See the Ball Game? Scan Your Iris First](https://www.bloomberg.com/news/articles/2016-12-28/popcorn-peanuts-iris-scan-nba-mlb-teams-enter-high-tech-age)
+
+Fingerprint biometrics ease stadium lines for select fans, teams use data to boost revenue, triggering privacy concerns.
 
 # Swift Domination
 
