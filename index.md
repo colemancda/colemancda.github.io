@@ -28,6 +28,20 @@ Mars is a cross-platform infrastructure component developed by WeChat Mobile Tea
 
 Cross-platform video transcoder Handbrake reached a milestone over the holiday break with the release of version 1.0.0 of the app after over 13 years in beta. 
 
+# Tech Bubble
+
+### [Tech Bubble 2.0 Is Bursting](http://www.breitbart.com/tech/2016/05/03/bursting-tech-bubble-2-0/)
+
+As valuations plunge, venture capitalists are raising record amounts of cash.
+
+### [Fitbit is buying troubled smartwatch maker Pebble for around $40 million](https://techcrunch.com/2016/11/30/fitbit-pebble/)
+
+Despite being valued at $740 million in 2015.
+
+### [Coca-Cola closes Founders startup incubator](https://techcrunch.com/2016/12/29/coca-cola-reportedly-closes-founders-startup-incubator/)
+
+The company liked to find startups, even before they formed.
+
 # Swift Domination
 
 ## [It's Alive!](https://github.com/s1ddok/Fiber2D)
@@ -59,12 +73,6 @@ Apple's spaceship-shaped campus in Cupertino, California is nearing completion, 
 ### [iPhone is still popular, while Apple Watch is a fad](https://techcrunch.com/2016/12/29/iphone-7-was-a-top-holiday-gift-but-apple-watch-is-fading/)
 
 Apple Watch usage in the month of December 2016 is now below where it was during the same time last year, following a steady drop since peak usage this May
-
-# Tech Bubble
-
-### [Coca-Cola closes Founders startup incubator](https://techcrunch.com/2016/12/29/coca-cola-reportedly-closes-founders-startup-incubator/)
-
-### [Tech Bubble 2.0 Is Bursting](http://www.breitbart.com/tech/2016/05/03/bursting-tech-bubble-2-0/)
 
 # Mobile Gaming Renaissance
 
