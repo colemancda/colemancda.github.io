@@ -4,20 +4,23 @@ layout: default
 
 # Mobile Gaming Renaissance
 
-### [Mega Man 1 - 6 coming to iOS and Android on January 5th](https://www.youtube.com/watch?v=iMYmGL_Jd5s)
+### [Mega Man 1 - 6 coming to iOS and Android on January 5th](http://mashable.com/2016/12/21/mega-man-collection-ios-android-capcom/#9JDP1U9TiaqY)
+
+Capcom is bringing the first six games in the Mega Man series to Android and iOS devices next month. The infernally challenging side-scrolling classics from the NES era will sell for $1.99 apiece.
 
 <iframe width="800" height="480" src="https://www.youtube.com/embed/iMYmGL_Jd5s" frameborder="0" allowfullscreen></iframe>
 
 ### [Super Mario Run](http://www.macworld.com/article/3151403/ios/super-mario-run-brings-nintendos-classic-fun-to-iosand-yes-its-totally-worth-10.html)
 
-Nintendo's classic platform comes to mobile phones as an iOS-only exclusive for $10, but offers free demo levels.
+Nintendo's classic platform comes to mobile phones as an iOS-only exclusive for $10, but offers free demo levels ([iTunes Store](https://itunes.apple.com/us/app/super-mario-run/id1145275343)).
 
 ![Super Mario Run](/images/news/SuperMarioRun.png)
 
 ### [RollerCoaster Tycoon Classic](https://www.engadget.com/2016/12/22/rollercoaster-tycoon-classic-ios-android/)
 
-![RollerCoaster Tycoon Classic](https://s.aolcdn.com/dims5/amp:e2b559d985e038908f070bc8cc5d046357c5c340/q:100/?url=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F467535b00e022d9d5632a185dd3d25d2%2F204734394%2FImage%2Buploaded%2Bfrom%2BiOS.jpg)
+Atari has just released RollerCoaster Tycoon Classic, a "new" game based on Chris Sawyer’s original best-selling RollerCoaster Tycoon® for $6 on [iTunes Store](https://itunes.apple.com/us/app/rollercoaster-tycoon-classic/id1113736426) and [Google Play](https://play.google.com/store/apps/details?id=com.atari.mobile.rctc).
 
+![RollerCoaster Tycoon Classic](https://s.aolcdn.com/dims5/amp:e2b559d985e038908f070bc8cc5d046357c5c340/q:100/?url=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F467535b00e022d9d5632a185dd3d25d2%2F204734394%2FImage%2Buploaded%2Bfrom%2BiOS.jpg)
 
 # Apple
 
