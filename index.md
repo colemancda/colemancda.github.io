@@ -30,6 +30,14 @@ Cross-platform video transcoder Handbrake reached a milestone over the holiday b
 
 # Tech Bubble
 
+### [Twitter Crashing](https://techcrunch.com/2017/01/01/twitters-controversial-head-of-china-is-the-latest-exec-to-leave-the-company/)
+
+Layoff of nine percent of Twitter’s staff and the exit of a number of high-profile leaders.
+
+### [Startups and Unicorns look to create value without profits](https://techcrunch.com/2016/12/30/why-you-probably-wont-invest-in-the-next-unicorn/)
+
+The objective of startups should not be to gain valuation without ever making money.
+
 ### [Tech Bubble 2.0 Is Bursting](http://www.breitbart.com/tech/2016/05/03/bursting-tech-bubble-2-0/)
 
 As valuations plunge, venture capitalists are raising record amounts of cash.
