@@ -2,6 +2,16 @@
 layout: default
 ---
 
+# 2017
+
+- [Defining your Model](2017/01/02/Defining-your-Model)
+
+- [Swift on Linux](2017/01/02/Swift-on-Linux)
+
+- [Protocol Oriented Programming](2017/01/02/Protocol-Oriented-Programming)
+
+- [Introduction to Swift](2017/01/02/Introduction-to-Swift)
+
 # 2016
 
 - [5 WWDC '16 Announcements Every Software Development Company Needs to Know](2016/07/04/WWDC16)
