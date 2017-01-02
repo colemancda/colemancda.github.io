@@ -22,15 +22,15 @@ Because Swift was developed by a team of compiler hackers, they were able to cre
 
 Lets get started writing some Swift code. The easiest way to get started is to open the Swift REPL, which interactively compiles Swift as if it were a scripting language. If you have a Mac with Xcode 8 installed, you can get started by creating a new playground.
 
-![Image 1_1](/Images/1_1.png)
+![Image 1_1](/images/1_1.png)
 
 If you have Linux, you can download Swift at [swift.org](https://swift.org). Deployment of Swift to Linux servers will be discussed in chapter 3. If you already have it installed, simply type `swift` in the command line and the interactive REPL will start processing your code. 
 
-![Image 1_2](/Images/1_2.png)
+![Image 1_2](/images/1_2.png)
 
 IBM offers a free online Swift compiler, which can also be used for compiling Swift code that only depends on the libraries bundled with the language (more on that in chapter 3), you can find it at [swiftlang.ng.bluemix.net](https://swiftlang.ng.bluemix.net).
 
-![Image 1_3](/Images/1_3.png)
+![Image 1_3](/images/1_3.png)
 
 # Language Features
 
