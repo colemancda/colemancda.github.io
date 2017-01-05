@@ -30,9 +30,43 @@ Cross-platform video transcoder Handbrake reached a milestone over the holiday b
 
 # Tech Bubble
 
+## Social startups struggle to profit
+
+### [Medium fires 50, attempts to change business model](https://blog.medium.com/renewing-mediums-focus-98f374a960be#.i1rptb2fw)
+
+"We realized we didn’t yet have the right solution to the big question of driving payment for quality content."
+
 ### [Twitter Crashing](https://techcrunch.com/2017/01/01/twitters-controversial-head-of-china-is-the-latest-exec-to-leave-the-company/)
 
 Layoff of nine percent of Twitter’s staff and the exit of a number of high-profile leaders.
+
+## Wearables fad
+
+### [Smartwatch sales are tanking](https://techcrunch.com/2016/10/24/smartwatch-sales-are-tanking/)
+
+Just 2.7 million units were shipped in Q3 2016 versus 5.6 million in Q3 2015. 
+
+### [Fitbit is buying troubled smartwatch maker Pebble for around $40 million](https://techcrunch.com/2016/11/30/fitbit-pebble/)
+
+Despite being valued at $740 million in 2015.
+
+### [Intel is laying off a major portion of its wearables group](https://techcrunch.com/2016/11/18/intel-layoffs/)
+
+Intel is planning to take a major step back from its investment in the space — or possibly even exit wearables altogether.
+
+## Massive layoffs and blind venture capitalists
+
+### [HP plans 3,000 to 4,000 job cuts over the next three years](https://techcrunch.com/2016/10/13/hp-layoffs/)
+
+Dion Weisler, the President and CEO of the newly formed HP Inc., attempted to put a positive spin on a tricky situation.
+
+### [Microsoft is laying off 1,850](https://techcrunch.com/2016/05/25/microsoft-is-laying-off-1850-to-streamline-its-smartphone-business-takes-950m-charge/)
+
+Trying to focus on mobile, paid $200 million in severance payments.
+
+### [Intel announces it’s slashing 12,000 jobs](https://techcrunch.com/2016/04/19/intel-announces-its-slashing-its-workforce-by-11-percent/)
+
+12,000 people will be losing their jobs worldwide, and that is never a good thing to hear.
 
 ### [Startups and Unicorns look to create value without profits](https://techcrunch.com/2016/12/30/why-you-probably-wont-invest-in-the-next-unicorn/)
 
@@ -45,14 +79,6 @@ As valuations plunge, venture capitalists are raising record amounts of cash.
 ### [Coca-Cola closes Founders startup incubator](https://techcrunch.com/2016/12/29/coca-cola-reportedly-closes-founders-startup-incubator/)
 
 The company liked to find startups, even before they formed.
-
-### [Fitbit is buying troubled smartwatch maker Pebble for around $40 million](https://techcrunch.com/2016/11/30/fitbit-pebble/)
-
-Despite being valued at $740 million in 2015.
-
-### [Smartwatch sales are tanking](https://techcrunch.com/2016/10/24/smartwatch-sales-are-tanking/)
-
-Just 2.7 million units were shipped in Q3 2016 versus 5.6 million in Q3 2015. 
 
 # User Privacy
 
