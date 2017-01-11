@@ -6,7 +6,7 @@ layout: default
 
 # Swift
 
-## [Cris Lattner leaves Apple for Tesla!](https://www.tesla.com/blog/welcome-chris-lattner)
+## [Chris Lattner leaves Apple for Tesla!](https://www.tesla.com/blog/welcome-chris-lattner)
 
 Chris is joining Tesla to lead its Autopilot engineering team.
 
