@@ -4,6 +4,36 @@ layout: default
 
 ---
 
+# Swift
+
+## [Cris Lattner leaves Apple for Tesla!](https://www.tesla.com/blog/welcome-chris-lattner)
+
+Chris is joining Tesla to lead its Autopilot engineering team.
+
+## [It's Alive!](https://github.com/s1ddok/Fiber2D)
+
+<blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">I think we just created the world&#39;s first pure Swift app on Android with Fiber2D. Shout out <a href="https://twitter.com/gonzalolarralde">@gonzalolarralde</a> for making this possible. [1/3] <a href="https://t.co/nHSAhO4J0f">pic.twitter.com/nHSAhO4J0f</a></p>&mdash; Andrey Volodin (@s1ddok) <a href="https://twitter.com/s1ddok/status/814218861314736129">December 28, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+> I think we just created the world's first pure Swift app on Android with Fiber2D. — Andrey Volodin (@s1ddok)
+
+### [POSIXErrorCode added for Linux](https://github.com/apple/swift/pull/3655)
+
+### [OpenStack Foundation Summit v2.1.0 Released](https://github.com/OpenStack-mobile/summit-app-ios/releases/tag/2.1.0)
+
+### [Escucha nuestro podcast en Español 🎧](http://www.cocoalima.com/mainswift)
+
+# Apple
+
+### [Apple Campus 2](https://www.youtube.com/watch?v=bOcYdtvCL3g)
+
+Apple's spaceship-shaped campus in Cupertino, California is nearing completion, and most of the ring-shaped main structure and auxiliary buildings have been finished.
+
+![Apple Campus 2](http://cdn.macrumors.com/article-new/2016/12/applecampus2aerial.jpg?retina)
+
+### [iPhone is still popular, while Apple Watch is a fad](https://techcrunch.com/2016/12/29/iphone-7-was-a-top-holiday-gift-but-apple-watch-is-fading/)
+
+Apple Watch usage in the month of December 2016 is now below where it was during the same time last year, following a steady drop since peak usage this May
+
 # Trending Software
 
 ### [Intel releases native Java compiler for iOS](https://multi-os-engine.org)
@@ -101,38 +131,6 @@ Storing voice recordings of people younger than 13 via Alexa, Google Home and Si
 ### [Want to See the Ball Game? Scan Your Iris First](https://www.bloomberg.com/news/articles/2016-12-28/popcorn-peanuts-iris-scan-nba-mlb-teams-enter-high-tech-age)
 
 Fingerprint biometrics ease stadium lines for select fans, teams use data to boost revenue, triggering privacy concerns.
-
-# Swift Domination
-
-## [It's Alive!](https://github.com/s1ddok/Fiber2D)
-
-<blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">I think we just created the world&#39;s first pure Swift app on Android with Fiber2D. Shout out <a href="https://twitter.com/gonzalolarralde">@gonzalolarralde</a> for making this possible. [1/3] <a href="https://t.co/nHSAhO4J0f">pic.twitter.com/nHSAhO4J0f</a></p>&mdash; Andrey Volodin (@s1ddok) <a href="https://twitter.com/s1ddok/status/814218861314736129">December 28, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-> I think we just created the world's first pure Swift app on Android with Fiber2D. — Andrey Volodin (@s1ddok)
-
-### [SwiftMessages: In-app notifications](https://github.com/SwiftKickMobile/SwiftMessages)
-
-### [JTAppleCalendar: The Unofficial Swift Apple Calendar Library](https://github.com/patchthecode/JTAppleCalendar)
-
-### [Punic: Carthage in Python?](https://github.com/schwa/punic)
-
-### [Reference counted releases in Swift](https://www.cocoawithlove.com/blog/resources-releases-reentrancy.html)
-
-### [OpenStack Foundation Summit v2.1.0 Released](https://github.com/OpenStack-mobile/summit-app-ios/releases/tag/2.1.0)
-
-### [Escucha nuestro podcast en Español 🎧](http://www.cocoalima.com/mainswift)
-
-# Apple
-
-### [Apple Campus 2](https://www.youtube.com/watch?v=bOcYdtvCL3g)
-
-Apple's spaceship-shaped campus in Cupertino, California is nearing completion, and most of the ring-shaped main structure and auxiliary buildings have been finished.
-
-![Apple Campus 2](http://cdn.macrumors.com/article-new/2016/12/applecampus2aerial.jpg?retina)
-
-### [iPhone is still popular, while Apple Watch is a fad](https://techcrunch.com/2016/12/29/iphone-7-was-a-top-holiday-gift-but-apple-watch-is-fading/)
-
-Apple Watch usage in the month of December 2016 is now below where it was during the same time last year, following a steady drop since peak usage this May
 
 # Mobile Gaming Renaissance
 
