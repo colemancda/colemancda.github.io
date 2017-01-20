@@ -6,6 +6,18 @@ layout: default
 
 # Swift
 
+### [Swift String Manifesto](https://github.com/apple/swift/blob/master/docs/StringManifesto.md)
+
+The document is meant to both provide a sense of the long-term vision (including undecided issues and possible approaches), and to define the scope of work that could be done in the Swift 4 timeframe.
+
+### [Naming things in Swift](https://ashfurrow.com/blog/naming-things-in-swift/)
+
+Following API guidelines that from Apple and personal suggestions.
+
+### [The Case for Deprecating UITableView](https://pspdfkit.com/blog/2017/the-case-for-deprecating-uitableview/)
+
+`UITableView` is a cornerstone of classical iOS development and one of the oldest classes. `UICollectionView` provides a better and more flexible replacement.
+
 ## [Chris Lattner leaves Apple for Tesla!](https://www.tesla.com/blog/welcome-chris-lattner)
 
 Chris is joining Tesla to lead its Autopilot engineering team.
@@ -24,17 +36,25 @@ Chris is joining Tesla to lead its Autopilot engineering team.
 
 # Apple
 
+### [Age of Apple is Over, But It's Not Tim Cook's Fault](http://www.macrumors.com/2017/01/12/peter-thiel-age-of-apple-is-over/)
+
+PayPal co-founder and venture capitalist Peter Thiel "confirmed" that "the age of Apple is over" based on his belief that smartphones will lack further innovation.
+
 ### [Apple Campus 2](https://www.youtube.com/watch?v=bOcYdtvCL3g)
 
 Apple's spaceship-shaped campus in Cupertino, California is nearing completion, and most of the ring-shaped main structure and auxiliary buildings have been finished.
 
-![Apple Campus 2](http://cdn.macrumors.com/article-new/2016/12/applecampus2aerial.jpg?retina)
+<iframe width="800" height="360" src="https://www.youtube.com/embed/bOcYdtvCL3g" frameborder="0" allowfullscreen></iframe>
 
 ### [iPhone is still popular, while Apple Watch is a fad](https://techcrunch.com/2016/12/29/iphone-7-was-a-top-holiday-gift-but-apple-watch-is-fading/)
 
 Apple Watch usage in the month of December 2016 is now below where it was during the same time last year, following a steady drop since peak usage this May
 
-# Trending Software
+# Software News
+
+### [Fabric is Joining Google](https://fabric.io/blog/fabric-joins-google)
+
+There's a risk that some of these tools will be integrated so tightly with Firebase that they become less useful for those who don't use it.
 
 ### [Intel releases native Java compiler for iOS](https://multi-os-engine.org)
 
@@ -134,7 +154,13 @@ Fingerprint biometrics ease stadium lines for select fans, teams use data to boo
 
 # Mobile Gaming Renaissance
 
-### [Mega Man 1 - 6 coming to iOS and Android on January 5th](http://mashable.com/2016/12/21/mega-man-collection-ios-android-capcom/#9JDP1U9TiaqY)
+### [Fire Emblem Heroes coming to iOS and Android on February 2](http://www.macrumors.com/2017/01/18/nintendo-fire-emblem-heroes/)
+
+Nintendo plans to make Fire Emblem Heroes free-to-play, with optional in-app purchases
+
+![Fire Emblem Heroes](http://cdn.macrumors.com/article-new/2017/01/fireemblem-800x483.jpg)
+
+### [Mega Man 1 - 6](http://mashable.com/2016/12/21/mega-man-collection-ios-android-capcom/#9JDP1U9TiaqY)
 
 Capcom is bringing the first six games in the Mega Man series to Android and iOS devices next month. The infernally challenging side-scrolling classics from the NES era will sell for $1.99 apiece.
 
