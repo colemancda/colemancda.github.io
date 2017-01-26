@@ -52,6 +52,12 @@ Apple Watch usage in the month of December 2016 is now below where it was during
 
 # Software News
 
+## [Wine 2.0 Released!](https://www.winehq.org/announce/2.0)
+
+This release represents over a year of development effort and around
+6,600 individual changes. The main highlights are the support for
+Microsoft Office 2013, and the 64-bit support on macOS.
+
 ### [Fabric is Joining Google](https://fabric.io/blog/fabric-joins-google)
 
 There's a risk that some of these tools will be integrated so tightly with Firebase that they become less useful for those who don't use it.
