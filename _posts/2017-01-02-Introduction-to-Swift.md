@@ -556,7 +556,7 @@ extension Swift.IntegerArithmetic {
 /// because the previous protocol extension already fullfilled that requirement.
 extension Int64: Addition { }
 
-print(Int64(2). v(2))
+print(Int64(2).add(2))
 ```
 
 ## Error Handling
