@@ -255,8 +255,11 @@ do {
         
         let classPointerSize = MemoryLayout<EmployeeClass>.size
         let classHeapSize = _swift_stdlib_malloc_size(unsafeBitCast(variable, to: UnsafePointer<CChar>.self))
-        classLoopMemoryUsage += classPointerSize + classHeapSize
+        classLoopMemoryUsage += classHeapSize
     }
+
+    let classPointerSize = MemoryLayout<EmployeeClass>.size
+    classLoopMemoryUsage += classPointerSize
     
     print("Used \(classLoopMemoryUsage) bytes reusing variable for class")
 }
