@@ -30,7 +30,7 @@ Chris is joining Tesla to lead its Autopilot engineering team.
 
 ### [POSIXErrorCode added for Linux](https://github.com/apple/swift/pull/3655)
 
-### [OpenStack Foundation Summit v2.2.0 Released](https://github.com/OpenStack-mobile/summit-app-ios/releases/tag/2.2.0)
+### [OpenStack Foundation Summit v2.2.1 Released](https://github.com/OpenStack-mobile/summit-app-ios/releases/tag/2.2.1)
 
 ### [Escucha nuestro podcast en Español 🎧](http://www.cocoalima.com/mainswift)
 
