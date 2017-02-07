@@ -138,6 +138,10 @@ The company liked to find startups, even before they formed.
 
 # User Privacy
 
+### [Vizio smart TVs tracked viewers around the clock without consent](https://arstechnica.com/tech-policy/2017/02/vizio-smart-tvs-tracked-viewers-around-the-clock-without-consent/)
+
+Vizio, one of the world's biggest makers of Smart TVs, is paying $2.2 million to settle charges that it collected viewing habits from 11 million devices without the knowledge or consent of the people watching them.
+
 ### [2017 To be Year Of ‘Smart Home’ Hacking](http://www.cnbc.com/2016/12/25/suddenly-hot-smart-home-devices-are-ripe-for-hacking-experts-warn.html)
 
 In October, hackers took over 100,000 IoT devices and used them to block traffic to well-known websites, including Twitter and Netflix.
