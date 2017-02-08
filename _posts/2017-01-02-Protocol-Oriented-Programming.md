@@ -288,7 +288,6 @@ protocol Person {
     var identifier: Int { get }
     var firstName: String { get }
     var lastName: String { get }
-    var fullName: String { get }
 }
 
 extension Person {
