@@ -4,6 +4,8 @@ layout: default
 
 # 2017
 
+- [WWDC '17 Highlights](2017/06/05/WWDC17)
+
 - [Defining your Model](2017/01/02/Defining-your-Model)
 
 - [Swift on Linux](2017/01/02/Swift-on-Linux)
