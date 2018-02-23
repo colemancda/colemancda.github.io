@@ -6,13 +6,13 @@ layout: default
 
 <img class="profile-picture" src="images/avatar.jpg">
 
-Seasoned iOS Developer experienced in designing and developing custom applications ranging from home automation, to social and business apps. Works well independently as a Freelancer and in teams of all sizes. Anticipates customer needs and meets project requirements. Skilled in cross-cultural communication. Natural learner. In the top 1% most active open source Swift contributors on GitHub (4000+ commits and 1500+ stars in 2016). Contributed to Swift compiler, reverse engineered Apple’s Foundation framework and wrote clone of UIKit for Linux. Also loves Hackintoshes.
+Seasoned iOS Developer experienced in designing and developing custom applications ranging from home automation, to social and business apps. Works well independently as a Freelancer and in teams of all sizes. Anticipates customer needs and meets project requirements. Skilled in cross-cultural communication. Natural learner. In the top 1% most active open source Swift contributors on GitHub (4500+ commits and 1500+ stars in 2016). Contributed to Swift compiler, reverse engineered Apple’s Foundation framework and wrote clone of UIKit for Linux. Also loves Hackintoshes.
 
 ----
 
 ## Skills
 
-- Languages: C (5 years), Objective-C (4 years), Swift (2 years)
+- Languages: C (5 years), Objective-C (5 years), Swift (3 years)
 
 - Platforms: macOS, iOS, watchOS, tvOS, Linux
 
@@ -34,27 +34,24 @@ Seasoned iOS Developer experienced in designing and developing custom applicatio
 
 ## Experience
 
+### Ring
+
+#### Senior iOS Developer; July 2016 - April 2017
+
+Pure Swift evangelist and developer. Working on cross-platform open source Swift libraries, refactoring and improvements for Ring's iOS codebase (as featured on ABC’s Shark Tank, previously called DoorBot).
+
 ### MAG Technologies LLC
 
-#### Senior iOS Developer; Dallas, TX; July 2016 - Present
+#### Senior iOS Developer; July 2016 - April 2017
 
-Responsible for maintaining Objective-C / Swift codebase and working on new features for end-to-end encrypted iOS messaging app.
+Pure Swift evangelist and developer. Working on cross-platform open source Swift libraries, refactoring and improvements for Ring's iOS codebase (as featured on ABC’s Shark Tank, previously called DoorBot).
 
 - [Website](http://www.sayfeapp.com)
 - [iTunes Store](https://itunes.apple.com/us/app/sayfe-secure-private-messenger/id1050787926)
 
-### Parkarr
-
-#### Senior iOS Developer; NYC, NY; February 2016 - July 2016
-
-Implemented improvements in Swift for application used to locate parking spots (as featured on ABC’s Shark Tank).
-
-- [Website](http://www.parkarr.com)
-- [iTunes Store](https://itunes.apple.com/us/app/parkarr/id1061745625)
-
 ### Santex Group
 
-#### Lead Mobile Developer; Lima, Peru; July 2015 - Present
+#### Senior iOS Developer; July 2015 - July 2017
 
 Responsible for estimation, architecture, and development of various iOS apps for clients. Developed open source Swift libraries that were reused across various projects. Swift and open source evangelist.
 
@@ -65,43 +62,45 @@ Responsible for estimation, architecture, and development of various iOS apps fo
 
 ### Sysco SA
 
-#### Senior iOS Developer; Lima, Peru; March 2015 - July 2015
+#### Senior iOS Developer; March 2015 - July 2015
 
-Responsible for maintaining Objective-C codebase of a suite of apps for the management of kindergartens in Norway.
+Communicated with product owners in Norway for development of new features for a suite of iOS and mobile apps for the management of kindergartens in Norway. Improved application performance and customer satisfaction by reviewing model code responsible for consuming web services and refactoring. Improved development culture in Peruvian offshore team, promoting and implementing new technologies like Kotlin and Swift, as well as sharing code exercises to improve teamwork and promote clean and maintainable code.
 
 - [Website](https://vigilo.no)
 - [iTunes Store](https://itunes.apple.com/us/app/vigilo-foresatt-barnehage/id771731428)
 
 ### Unikey Technologies
 
-#### Senior iOS Developer; Winter Park, FL; September 2014 - March 2015
+#### Senior iOS Developer; September 2014 - March 2015
 
-Developed iOS application for unlocking your door via Bluetooth LE (as featured on ABC’s Shark Tank). Updated codebase for iOS 8, migrated Objective-C code to Swift, implemented Adaptive UI, and refactored code for internal framework targets. 
+Developed iOS application for unlocking your door via Bluetooth LE (as featured on ABC’s Shark Tank). Improved app UX by reviewing all view code and migrating to Adaptive UI and AutoLayout. Decreased application binary size by migrating image assets to CoreGraphics vector code. Improved overall app performance by refactoring and rewriting model code in Swift, including Bluetooth communication packets and REST API client. Increased application exposure and functionality by integrating with third-party partners like Ring and Google Nest. Coordinated with product owners, backend developers, and embedded developers for development of new features and proposal of ideas to improve product.
 
 - [Website](http://www.unikey.com)
 - [iTunes Store](https://itunes.apple.com/us/app/kevo-your-phone-is-now-your-key/id685604951)
 
 ### Voalte
 
-#### iOS Developer; Sarasota, FL; January 2014  - September 2014
+#### iOS Developer; January 2014  - September 2014
 
-Responsible for debugging and increasing the performance of Voalte's iOS apps collaboratively with engineering team. Implemented concurrency, MVC design, and updated code for iOS 8. Also worked heavily with XMPP and REST APIs.
+Implemented new features for healthcare communication app using VOIP (PJSIP), XMPP and REST. Improved application performance by debugging multithreaded architecture and proposing changes. Increased customer satisfaction by improving application performance, and refactoring code to execute operations in background threads.
 
 - [Website](http://www.voalte.com)
 - [iTunes Store](https://itunes.apple.com/us/app/voalte-one/id350193462)
 
 ### Tecla Labs
 
-#### iOS Developer; Lima, Peru; January 2013 - May 2013
+#### iOS Developer; January 2013 - May 2013
 
-Worked as an iOS developer, creating new projects and supporting existing projects as needed. Developed a catalog app for a Peruvian jewelry company and worked on an iOS framework for rapid deployment of iOS apps for small businesses. Also worked on a Cocos2D runner game, social puzzle app, and Instagram-like app with image filters.
+Executed development of iOS apps for US and Peruvian businesses. Communicated with US clients in English and Peruvian clients in Spanish to properly define product requirements. Led mobile development team and communicated in bilingual and multicultural environment to implement product and satisfy customer needs. Lead inception, product and development of software targeted at Peruvian businesses. Acquired new US based clients via online meetings. Responsible for estimation of new mobile projects.
 
 - [Website](http://www.teclalabs.com)
 - [iTunes Store](https://itunes.apple.com/gb/app/aldo-co.-encuentra-tu-anillo/id648603114)
 
 ----
 
-## Projects
+## Open Source
+
+- [OpenStack Foundation Summit](https://github.com/OpenStack-mobile/summit-app-ios) - iOS, watchOS, tvOS, & macOS app with shared codebase for the OpenStack Foundation Summit.
 
 - [SwiftFoundation](https://github.com/PureSwift/SwiftFoundation ) - Cross-Platform, Protocol-Oriented Programming base library to complement the Swift Standard Library.
 
@@ -109,9 +108,13 @@ Worked as an iOS developer, creating new projects and supporting existing projec
 
 - [Cacao](https://github.com/PureSwift/Cacao) - Pure Swift Cross-platform UIKit (Cocoa Touch) implementation (Supports Linux).
 
-- [NetworkObjects](https://github.com/colemancda/NetworkObjects) - Creates a REST API from a Core Data model. First Open Source Objective-C server framework (1000 commits, deprecated)
+- [LinPhoneSwift](https://github.com/colemancda/LinPhoneSwift) - Swift library for the LinPhone VOIP library.
 
-- [Wi-Fi Crack](https://github.com/colemancda/Wi-Fi-Crack) - Wi-Fi Crack allows you to crack any wireless network with WEP security. Powered by [Aircrack-ng](http://www.aircrack-ng.org). Wi-Fi Crack was the most popular app for month of April 2014 on [MacUpdate.com](https://www.macupdate.com/app/mac/46004/wi-fi+crack), with over 250k downloads. 
+- [VLCKitSwift](https://github.com/colemancda/VLCKitSwift) - Swift library for the VLC media player library.
+
+- [CoreDataCodable](https://github.com/colemancda/CoreDataCodable) - Encode and decode Swift 4 Codable types to CoreData.
+
+- [Wi-Fi Crack](https://github.com/colemancda/Wi-Fi-Crack) - Crack any wireless network with WEP security.
 
 ----
 
