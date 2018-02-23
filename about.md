@@ -40,6 +40,9 @@ Seasoned iOS Developer experienced in designing and developing custom applicatio
 
 Pure Swift evangelist and developer. Working on cross-platform open source Swift libraries, refactoring and improvements for Ring's iOS codebase (as featured on ABC’s Shark Tank, previously called DoorBot).
 
+- [Website](http://www.ring.com)
+- [iTunes Store](https://itunes.apple.com/us/app/ring-always-home/id926252661)
+
 ### MAG Technologies LLC
 
 #### Senior iOS Developer; July 2016 - April 2017
