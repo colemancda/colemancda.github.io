@@ -36,7 +36,7 @@ Seasoned iOS Developer experienced in designing and developing custom applicatio
 
 ### Ring
 
-#### Senior iOS Developer; July 2016 - April 2017
+#### Senior iOS Developer; July 2017 - Present
 
 Pure Swift evangelist and developer. Working on cross-platform open source Swift libraries, refactoring and improvements for Ring's iOS codebase (as featured on ABC’s Shark Tank, previously called DoorBot).
 
@@ -44,7 +44,7 @@ Pure Swift evangelist and developer. Working on cross-platform open source Swift
 
 #### Senior iOS Developer; July 2016 - April 2017
 
-Pure Swift evangelist and developer. Working on cross-platform open source Swift libraries, refactoring and improvements for Ring's iOS codebase (as featured on ABC’s Shark Tank, previously called DoorBot).
+Lead development of end-to-end encrypted iOS messaging app. Increased application performance and UX by debugging and refactoring the decryption of messages and multithreaded data access. Lead development efforts to improve UX by implementing new features like group chats. Greatly increased application downloads by coordinating with marketing team for integrating analytics, and localizing app for various languages and regions (including Arabic).
 
 - [Website](http://www.sayfeapp.com)
 - [iTunes Store](https://itunes.apple.com/us/app/sayfe-secure-private-messenger/id1050787926)
