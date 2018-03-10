@@ -1,10 +1,16 @@
+---
+layout: post
+title:  "Open Source Contributions"
+date:   2018-03-10
+---
+
 # Open Source Contributions
 
 - [PureSwift](https://github.com/PureSwift)
 - [ColemanCDA](https://github.com/colemancda)
 - [colemancda.github.io](http://colemancda.github.io)
 
-## Swift Compiler Contributions
+## Swift Compiler
 
 - [Implemented Foundation.UUID for Linux](https://github.com/apple/swift-corelibs-foundation/commits?author=colemancda)
 
