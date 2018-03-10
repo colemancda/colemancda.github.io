@@ -6,6 +6,8 @@ date:   2018-03-10
 
 # Open Source Contributions
 
+![github-oss-03-2018.gif]({{ site.url }}/images/github-oss-03-2018.gif)
+
 - [PureSwift](https://github.com/PureSwift)
 - [ColemanCDA](https://github.com/colemancda)
 - [colemancda.github.io](http://colemancda.github.io)
