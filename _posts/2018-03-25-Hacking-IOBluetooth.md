@@ -6,14 +6,17 @@ date:   2018-03-25
 
 # Hacking `IOBluetooth`
 
-I recently did a little research project to see if I could control the Bluetooth controller on my Mac via the HCI (Host Controller Interface) commands since I wanted to replicate the functionality of [PureSwift/BluetoothLinux](https://github.com/PureSwift/BluetoothLinux) on macOS. Since I have my [PureSwift/Bluetooth](https://github.com/PureSwift/Bluetooth) library with some HCI commands implemented, I assumed the endeavor was only a matter of opening a socket to the Bluetooth adapter and sending bytes, which is how its done on Linux. It turns out that Apple is safer in the sense that you can't seem to open a connection and talk directly to the hardware in userland, instead CoreBlueooth acts as a proxy for IOBluetooth, which opens Mach ports to a Kernel Extension (Device driver) which is loaded with the Kernel. In theory, this should be much more secure than Linux becuase it would impossible to talk to the Bluetooth hardware directly even with elevated permissions like `sudo`. Here is a breakdown on how the CoreBluetooth API works:
+I recently did a little research project to see if I could control the Bluetooth controller on my Mac via HCI (Host Controller Interface) commands in order to replicate the functionality of [PureSwift/BluetoothLinux](https://github.com/PureSwift/BluetoothLinux) on macOS. Since I have my [PureSwift/Bluetooth](https://github.com/PureSwift/Bluetooth) library with some HCI commands implemented, I assumed the endeavor was only a matter of opening a socket to the Bluetooth adapter and sending bytes, which is how its done on Linux. It turns out that Apple's Darwin kernet is more secure and doesn't allow userland code to open a socket and talk directly to the hardware, instead CoreBlueooth acts as a proxy for `bluetoothd` which use the `IOBluetooth` framework, which in turn opens a Mach port to a Kernel Extension (Device driver) which is loaded with the Kernel. In theory, this should be much more secure than Linux becuase it would impossible to talk to the Bluetooth hardware directly even with elevated permissions like `sudo`. Here is a breakdown on how the CoreBluetooth API works:
 
 App code (loads dynamic library) 
--> (via ObjC) CoreBluetooth (`CBCentralManager` is a proxy for `CBXpcConnection`) 
--> (via XPC) com.apple.bluetoothd deamon with root permissions (Objective-C `IOBluetoothHostController`) 
--> (via Mach Port) Kernel Extension (C++ `IOBluetoothHostController`)
 
-Thankfully, `IOBluetoothHostController` has been around since macOS 10.2 and is a public API, despite it being the code that runs on the `bluetoothd` service. This Objective-C class allows for some basic operations with your Bluetooth controller according the official APIs. I used Hopper to decompile `bluetoothd` and found that it was using `IOBluetoothHostController`, which let me to believe it was using private APIs I could exploit. Using `class-dump`, I discovered that Apple implemented all the HCI commands in the Bluetooth 4.2 specification via [private methods](https://github.com/colemancda/HCITool/blob/42afa45337781405897135ec11d86ddf6934ebe2/HCITool/IOBluetoothHostController.h) on `IOBluetoothHostController`. I decided to attempt change the local name of my Bluetooth device via these private APIs, which is pretty easy and requires no root access or special entitlements.
+-> (via ObjC) **CoreBluetooth** (`CBCentralManager` is a proxy for `CBXpcConnection`) 
+
+-> (via XPC) **com.apple.bluetoothd** deamon with root permissions (Objective-C `IOBluetooth.IOBluetoothHostController`) 
+
+-> (via Mach Port) **Kernel Extension** / .kext (C++ `IOKit.IOBluetoothHostController`)
+
+Thankfully, the Objetive-C `IOBluetoothHostController` API is a public API that has been around since macOS 10.2, despite it being the code that runs on the `bluetoothd` service. This Objective-C class allows for some basic operations with your Bluetooth controller according the official APIs. I used Hopper to decompile `bluetoothd` and discovered that it was using `IOBluetoothHostController`, which led me to believe it was using private APIs I could exploit. Using `class-dump`, I discovered that Apple implemented all the HCI commands in the Bluetooth 4.2 specification via [private methods](https://github.com/colemancda/HCITool/blob/42afa45337781405897135ec11d86ddf6934ebe2/HCITool/IOBluetoothHostController.h) on `IOBluetoothHostController`. Changing the local name of a Mac's Bluetooth adapter via these private APIs is pretty easy and requires no root access or special entitlements.
 
 ```objective-c
 IOBluetoothHostController *hciController = [IOBluetoothHostController defaultController]; // public API
@@ -24,7 +27,7 @@ name[2] = 'A';
 [hciController BluetoothHCIWriteLocalName:&name]; // private API
 ```
 
-If you check in Bluetooth preferences or even scan with an app like [LightBlue Explorer](https://itunes.apple.com/us/app/lightblue-explorer/id557428110?mt=8), its unlikely you will see your Bluetooth local name change since the values are cached. Apple provides [PacketLogger and BluetoothExplorer](https://robservatory.com/debugging-bluetooth-issues-in-macos-sierra/) which allow you to debug your hardware (and requires elevated permissions to run). 
+If you check in *Bluetooth Preferences* or discover your Bluetooth adapter with an app like [LightBlue Explorer](https://itunes.apple.com/us/app/lightblue-explorer/id557428110?mt=8), its unlikely you will see your Bluetooth local name change since the values are cached. Apple provides [PacketLogger and BluetoothExplorer](https://robservatory.com/debugging-bluetooth-issues-in-macos-sierra/) which allow you to debug your hardware (and requires elevated permissions to run). 
 
 ![Image]({{ site.url }}/images/IOBLuetoothChangeLocalNamePacketLogger.png)
 
@@ -56,7 +59,7 @@ int -[IOBluetoothHostController BluetoothHCIWriteLocalName:](void * self, void *
 }
 ```
 
-Most of the privates methods for HCI commands follow a pattern which requires sending a message via a Mach port to send the HCI command via `_BluetoothHCIDispatchUserClientRoutine()`. 
+Most of the private methods for HCI commands follow a pattern which requires sending data via a Mach port to the IOKit service to forward to the HCI command via `BluetoothHCIDispatchUserClientRoutine()`. 
 
 ```c
 int _BluetoothHCIDispatchUserClientRoutine(int arg0, int arg1, int arg2) {
@@ -86,14 +89,14 @@ int _BluetoothHCIDispatchUserClientRoutine(int arg0, int arg1, int arg2) {
 
 ```
 
-After a while of reading assembly and psuedocode, I discovered that `IOBluetoothHostController` has contrete subclasses for specific vendors. 
+After a while of reading assembly and psuedocode, I discovered that `IOBluetoothHostController` has subclasses for specific vendors. 
 
 - `AtherosHostController`
 - `BroadcomHostController`
 - `CSRBlueICEHostController`
 - `CSRHostController`
 
-I assumed that they had done this to provide vendor specific HCI commands that are not part of the Bluetooth standard, which turned out to be true. Since these classes are implemented in the Objective-C userland library, I assumed they would not want to modify the C++ IOKit Kernel Extension since those need to be more stable and any changes could potentially cause kernel crashes, not to mention that C++ suffers from class fragility and a Kext compiled for an older macOS version would not be able to link with a newer IOKit release if they made ABI breaking changes in the C++ Kernel Extensions layer. I was able to find the needle in the haystack in one of the vendor HCI commands that Apple seemed to be using for testing Mac hardware before shipping.
+I assumed that Apple engineers had done this to provide vendor specific HCI commands that are not part of the Bluetooth standard. Since these classes are implemented in the Objective-C library, I assumed they do not want to modify the C++ IOKit Kernel Extension library since its need to be extremely stable and any changes could potentially cause kernel crashes, not to mention that C++ suffers from class fragility and a Kext compiled for an older macOS version would not be able to link with a newer IOKit release if they made ABI breaking changes in the C++ Kernel Extensions layer. I was able to find the needle in the haystack in one of the vendor HCI commands that Apple seemed to be using for testing Mac hardware before shipping.
 
 ```c
 int _IOBluetoothCSRLibHCISendBCCMDMessage(int arg0) {
@@ -128,10 +131,10 @@ int _IOBluetoothCSRLibHCISendBCCMDMessage(int arg0) {
 To send a raw HCI command, a userland executable has to perform the following procedure:
 
 1. Allocate an HCI request buffer on the IOKit service driver and get its identifier.
-2. Send a struct whose values will be used as arguments to call a C++ function on the IOKit driver. In this case, we include the request identifier, raw HCI command bytes that will be sent to the controller, and the size of the command data we sent. In the C++ Kernel Extension, the `IOBluetoothHCIController` service (a C++ object) will extract these values from the sent struct and call the once of its corresponging C++ methods on the actual driver code running in kernel (e.g. `IOBluetoothHCIUserClient::DispatchHCIReadLocalName()`, `IOBluetoothHostController::SendRawHCICommand`). 
-3. Finally, we cleanup or operation in the Kext by sending telling the driver to delete its HCI command request buffer.
+2. Send a struct whose values will be used as arguments to call a C++ function on the IOKit driver. In this case, we include the request identifier, raw HCI command data, and the size of the command data that will be sent to the controller. In the Kernel Extension, the `IOBluetoothHCIController` service (a C++ object) will extract these values from the sent struct and call the once of its corresponging C++ methods on the actual driver code loaded with the kernel (e.g. `IOBluetoothHCIUserClient::DispatchHCIReadLocalName()`, `IOBluetoothHostController::SendRawHCICommand`). 
+3. Finally, we cleanup our operation in the Kext by requesting the driver to delete its HCI command request buffer.
 
-While this is typically done by the `com.apple.bluetoothd` deamon with elevated permissions, it seems that any executable can use this procedure. I updated my method to write the local name with the Objective-C API and using `BluetoothHCISendRawCommand()` directly.
+While this procedure is typically done by the `com.apple.bluetoothd` deamon with elevated permissions, it seems that any executable can use this procedure without special permissions or entitlements. I updated my method to write the Bluetooth controller's local name with the Objective-C API and using `BluetoothHCISendRawCommand()` directly.
 
 ```objective-c
 
@@ -159,7 +162,7 @@ struct HCIRequest {
     
     NSLog(@"BluetoothHCIWriteLocalName");
     
-    // manually
+    // manually via C function
     
     struct HCIRequest request;
     int error = BluetoothHCIRequestCreate(&request, 1000, nil, 0);
@@ -260,7 +263,7 @@ I attempted to read the `Accept Connection Timeout` parameter with the ObjC priv
 }
 ```
 
-Upon verifing with `PacketLogger` that the command was being sent to the controller, I needed to find a way had to way to retrieve the HCI command return parameter value. Creating another C function that imitates `BluetoothHCISendRawCommand()` that would accept a data pointer for output.
+Upon verifying with `PacketLogger` that the command was being sent to the controller, I needed to find a way had to way to retrieve the HCI command return parameter value. My solution was to creating another C function that imitates `BluetoothHCISendRawCommand()` and would accept a data pointer for output.
 
 ```c
 int _BluetoothHCISendRawCommand(int arg0, int arg1, int arg2) {
@@ -280,7 +283,7 @@ int _BluetoothHCISendRawCommand(int arg0, int arg1, int arg2) {
 }
 ```
 
-Despite reverse engineering the procedure, the decompiled psuedo code only indicated a value on the stack that is passed to `BluetoothHCIDispatchUserClientRoutine()`, not its size or what kind of struct. I was able to deduce the size of struct / data being sent is `0x74` or 116 bytes since is it standard practice properly initialize a struct or data pointer in C by settings its contents to 0 with `memset()`. I could also verify that the data provided to `BluetoothHCIDispatchUserClientRoutine()` was always 116 bytes since that value (`0x74`) was  provided as the length of the data sent to the IOKit service.
+Despite reverse engineering the procedure, the decompiled psuedo code only indicated a value on the stack that is passed to `BluetoothHCIDispatchUserClientRoutine()`, not its size or what kind of struct. I was able to deduce the size of struct / data being sent is `0x74` or 116 bytes since is it standard practice to properly initialize a struct or data pointer in C by settings its contents to 0 with `memset()`. I could also verify that the data provided to `BluetoothHCIDispatchUserClientRoutine()` was always 116 bytes since that value (`0x74`) was  provided as the length of the data sent to the IOKit service.
 
 ```c
 int _BluetoothHCIDispatchUserClientRoutine(int arg0, int arg1, int arg2) {
@@ -310,7 +313,7 @@ int _BluetoothHCIDispatchUserClientRoutine(int arg0, int arg1, int arg2) {
 
 ```
 
-`IOConnectCallStructMethod()` is used to call the C++ method of the Bluetooth kernel extension (also called `IOBluetoothHostController`, but implemented in C++, not Objective-C) and requires the C++ methods' arguments and return value to be provided as data pointers. After searching online for IOBluetooth vulnerabilites I found an [example](http://roberto.greyhats.it/2015/01/osx-bluetooth-lpe.html) of calling a C++ member `IOConnectCallStructMethod` of `IOBluetoothHostController`.
+`IOConnectCallStructMethod()` is used to call the C++ method of the Bluetooth kernel extension (also called `IOBluetoothHostController`, but implemented in C++, not Objective-C) and requires the C++ methods' arguments and return value to be provided as data pointers. After searching online for IOBluetooth vulnerabilites I found an [example](http://roberto.greyhats.it/2015/01/osx-bluetooth-lpe.html) of calling a C++ member, `IOConnectCallStructMethod` of `IOBluetoothHostController`.
 
 ```obejctive-c
 struct BluetoothCall { // 120 bytes
@@ -352,7 +355,7 @@ struct BluetoothCall { // 120 bytes
  }
 ```
 
-I assumed the 116 bytes sent in `BluetoothHCIDispatchUserClientRoutine()` is a `BluetoothCall` struct and the last member is `uint32` instead of `uint64`. With this information I tried to reimplement `BluetoothHCISendRawCommand()` in order to add arguements to allow for HCI commands return parameters. While Hopper didnt specify which values of the struct were being sent I was able to deduce this information via a symbolic breakpoint for `BluetoothHCIDispatchUserClientRoutine()` in LLDB:
+I assumed the 116 bytes sent in `BluetoothHCIDispatchUserClientRoutine()` is a `BluetoothCall` struct and the last member is `uint32` instead of `uint64`. With this information I tried to reimplement `BluetoothHCISendRawCommand()` in order to add arguments to allow for HCI commands return parameters. While Hopper didnt specify which values of the struct were being sent I was able to deduce this information by dumping the value via a symbolic breakpoint for `BluetoothHCIDispatchUserClientRoutine()` in LLDB:
 
 ```
 (lldb) memory read --size 8 --format 'A' --count 15 $arg1
