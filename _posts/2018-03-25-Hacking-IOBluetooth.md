@@ -502,4 +502,5 @@ int _BluetoothHCISendRawCommand(struct HCIRequest request,
 
 You can find the source code on GitHub at [ColemanCDA/HCITool](https://github.com/ColemanCDA/HCITool).
 
+![Image]({{ site.url }}/images/macOSHCITool.gif)
 
