@@ -466,7 +466,11 @@ I assumed the 116 bytes sent in `BluetoothHCIDispatchUserClientRoutine()` is a `
 With this information I was able to reimplement `BluetoothHCISendRawCommand()`
 
 ```c
-int _BluetoothHCISendRawCommand(struct HCIRequest request, void *commandData, size_t commmandSize) {
+int _BluetoothHCISendRawCommand(struct HCIRequest request,
+                                void *commandData,
+                                size_t commmandSize,
+                                void *returnParameter,
+                                size_t returnParameterSize) {
     
     int errorCode = 0;
     
@@ -476,16 +480,17 @@ int _BluetoothHCISendRawCommand(struct HCIRequest request, void *commandData, si
     
     if ((commandData != 0x0) && (commmandSize > 0x0)) {
         
+        // IOBluetoothHostController::
+        // SendRawHCICommand(unsigned int, char*, unsigned int, unsigned char*, unsigned int)
         call.args[0] = (uintptr_t)&request.identifier;
         call.args[1] = (uintptr_t)commandData;
         call.args[2] = (uintptr_t)&commmandSize;
-        call.sizes[0] = 0x04;
-        call.sizes[1] = 0x03;
-        call.sizes[2] = 0x08;
+        call.sizes[0] = sizeof(uint32);
+        call.sizes[1] = commmandSize;
+        call.sizes[2] = sizeof(uintptr_t);
         call.index = 0x000060c000000062;
         
-        // IOBluetoothHostController::SendRawHCICommand(unsigned int, char*, unsigned int, unsigned char*, unsigned int)
-        errorCode = BluetoothHCIDispatchUserClientRoutine(&call, 0x0, 0x0);
+        errorCode = BluetoothHCIDispatchUserClientRoutine(&call, returnParameter, &returnParameterSize);
     }
     else {
         errorCode = 0xe00002c2;
