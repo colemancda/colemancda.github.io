@@ -16,6 +16,63 @@ App code (loads dynamic library)
 
 -> (via Mach Port) **Kernel Extension** / .kext (C++ `IOKit.IOBluetoothHostController`)
 
+Here is a backtrace of `bluetoothd` illustrating this"
+
+```
+Thread 0x2f5              DispatchQueue 1           1001 samples (1-1001)     priority 31-46 (base 31)  cpu time 0.022
+  1001  start + 1 (libdyld.dylib + 21045) [0x7fff968f8235]
+    1001  ??? (blued + 187775) [0x105f0ad7f]
+      1001  -[NSRunLoop(NSRunLoop) run] + 76 (Foundation + 140218) [0x7fff82b5f3ba]
+        1001  -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 277 (Foundation + 140514) [0x7fff82b5f4e2]
+          1001  CFRunLoopRunSpecific + 420 (CoreFoundation + 553236) [0x7fff8114c114]
+            993   __CFRunLoopRun + 1361 (CoreFoundation + 555201) [0x7fff8114c8c1]
+              993   __CFRunLoopServiceMachPort + 212 (CoreFoundation + 558132) [0x7fff8114d434]
+                993   mach_msg_trap + 10 (libsystem_kernel.dylib + 74570) [0x7fff96a1f34a]
+                 *993   ipc_mqueue_receive_continue + 0 (kernel + 854224) [0xffffff80002d08d0]
+            8     __CFRunLoopRun + 2205 (CoreFoundation + 556045) [0x7fff8114cc0d]
+              8     __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9 (CoreFoundation + 814025) [0x7fff8118bbc9]
+                8     _dispatch_main_queue_callback_4CF + 505 (libdispatch.dylib + 59656) [0x7fff968cf908]
+                  8     _dispatch_mach_invoke + 868 (libdispatch.dylib + 25751) [0x7fff968c7497]
+                    8     _dispatch_queue_serial_drain + 443 (libdispatch.dylib + 96219) [0x7fff968d87db]
+                      8     _dispatch_mach_msg_invoke + 414 (libdispatch.dylib + 31129) [0x7fff968c8999]
+                        8     _dispatch_client_callout4 + 9 (libdispatch.dylib + 30502) [0x7fff968c8726]
+                          8     _xpc_connection_mach_event + 1707 (libxpc.dylib + 39263) [0x7fff96b4a95f]
+                            8     _xpc_connection_call_event_handler + 35 (libxpc.dylib + 44950) [0x7fff96b4bf96]
+                              4     ??? (blued + 551462) [0x105f63a26]
+                                4     ??? (blued + 239559) [0x105f177c7]
+                                  4     _NSSetCharValueAndNotify + 260 (Foundation + 448025) [0x7fff82baa619]
+                                    4     -[NSObject(NSKeyValueObservingPrivate) _changeValueForKey:key:key:usingBlock:] + 60 (Foundation + 27629) [0x7fff82b43bed]
+                                      4     -[NSObject(NSKeyValueObservingPrivate) _changeValueForKeys:count:maybeOldValuesDict:usingBlock:] + 944 (Foundation + 1579207) [0x7fff82cbe8c7]
+                                        4     NSKeyValueDidChange + 486 (Foundation + 274052) [0x7fff82b7fe84]
+                                          4     NSKeyValueNotifyObserver + 350 (Foundation + 275949) [0x7fff82b805ed]
+                                            4     ??? (blued + 112657) [0x105ef8811]
+                                              1     ??? (blued + 117061) [0x105ef9945]
+                                                1     -[BroadcomHostController BroadcomHCILEAddAdvancedMatchingRuleWithAddress:address:blob:mask:RSSIThreshold:packetType:matchingCapacity:matchingRemaining:] + 200 (IOBluetooth + 420408) [0x7fff83066a38]
+                                                  1     sendRawHCIRequest + 246 (IOBluetooth + 344294) [0x7fff830540e6]
+                                                    1     IOConnectCallStructMethod + 56 (IOKit + 29625) [0x7fff830ab3b9]
+                                                      1     IOConnectCallMethod + 336 (IOKit + 29170) [0x7fff830ab1f2]
+                                                        1     io_connect_method + 375 (IOKit + 531601) [0x7fff83125c91]
+                                                          1     mach_msg_trap + 10 (libsystem_kernel.dylib + 74570) [0x7fff96a1f34a]
+                                                           *1     hndl_mach_scall64 + 22 (kernel + 638390) [0xffffff800029bdb6]
+                                                             *1     mach_call_munger64 + 456 (kernel + 2011608) [0xffffff80003eb1d8]
+                                                               *1     mach_msg_overwrite_trap + 327 (kernel + 919415) [0xffffff80002e0777]
+                                                                 *1     ipc_kmsg_send + 225 (kernel + 835505) [0xffffff80002cbfb1]
+                                                                   *1     ipc_kobject_server + 412 (kernel + 980924) [0xffffff80002ef7bc]
+                                                                     *1     ??? (kernel + 1827576) [0xffffff80003be2f8]
+                                                                       *1     is_io_connect_method + 497 (kernel + 7259025) [0xffffff80008ec391]
+                                                                         *1     IOBluetoothHCIUserClient::externalMethod(unsigned int, IOExternalMethodArguments*, IOExternalMethodDispatch*, OSObject*, void*) + 257 (IOBluetoothFamily + 82363) [0xffffff7f81eb81bb]
+                                                                           *1     IOCommandGate::runAction(int (*)(OSObject*, void*, void*, void*, void*), void*, void*, void*, void*) + 314 (kernel + 7068058) [0xffffff80008bd99a]
+                                                                             *1     IOBluetoothHCIUserClient::SimpleDispatchWL(IOBluetoothHCIDispatchParams*) + 918 (IOBluetoothFamily + 83308) [0xffffff7f81eb856c]
+                                                                               *1     IOBluetoothHostController::SendRawHCICommand(unsigned int, char*, unsigned int, unsigned char*, unsigned int) + 2423 (IOBluetoothFamily + 327391) [0xffffff7f81ef3edf]
+                                                                                 *1     IOBluetoothHCIRequest::Start() + 515 (IOBluetoothFamily + 114737) [0xffffff7f81ec0031]
+                                                                                   *1     IOEventSource::sleepGate(void*, unsigned long long, unsigned int) + 83 (kernel + 7062579) [0xffffff80008bc433]
+                                                                                     *1     IOWorkLoop::sleepGate(void*, unsigned long long, unsigned int) + 126 (kernel + 7057470) [0xffffff80008bb03e]
+                                                                                       *1     lck_mtx_sleep_deadline + 147 (kernel + 1019715) [0xffffff80002f8f43]
+                                                                                         *1     thread_block_reason + 222 (kernel + 1061566) [0xffffff80003032be]
+                                                                                           *1     ??? (kernel + 1066139) [0xffffff800030449b]
+                                                                                             *1     machine_switch_context + 206 
+```
+
 Thankfully, the Objetive-C `IOBluetoothHostController` API is a public API that has been around since macOS 10.2, despite it being the code that runs on the `bluetoothd` service. This Objective-C class allows for some basic operations with your Bluetooth controller according the official APIs. I used Hopper to decompile `bluetoothd` and discovered that it was using `IOBluetoothHostController`, which led me to believe it was using private APIs I could exploit. Using `class-dump`, I discovered that Apple implemented all the HCI commands in the Bluetooth 4.2 specification via [private methods](https://github.com/colemancda/HCITool/blob/42afa45337781405897135ec11d86ddf6934ebe2/HCITool/IOBluetoothHostController.h) on `IOBluetoothHostController`. Changing the local name of a Mac's Bluetooth adapter via these private APIs is pretty easy and requires no root access or special entitlements.
 
 ```objective-c
@@ -120,6 +177,35 @@ int _IOBluetoothCSRLibHCISendBCCMDMessage(int arg0) {
     var_74 = var_1C;
     if (**___stack_chk_guard == var_8) {
             rax = var_74;
+    }
+    else {
+            rax = __stack_chk_fail();
+    }
+    return rax;
+}
+```
+
+```
+int -[BroadcomHostController BroadcomHCILEAddAdvancedMatchingRuleWithAddress:address:blob:mask:RSSIThreshold:packetType:matchingCapacity:matchingRemaining:](void * self, void * _cmd, char arg2, struct BluetoothDeviceAddress * arg3, struct ? arg4, struct ? arg5, char arg6, unsigned char arg7, char * arg8, char * arg9) {
+    var_30 = **___stack_chk_guard;
+    var_A0 = arg5;
+    var_A8 = arg_38;
+    memset(&var_70, 0x0, 0x39);
+    var_70 = 0xfce9 & 0xffff & 0xff;
+    memset(&var_B1, 0x0, 0x3);
+    var_C0 = 0x3;
+    var_AC = _sendRawHCIRequest(&var_70, 0x39, &var_B1, &var_C0);
+    if (var_AC == 0x0) {
+            if (var_A0 != 0x0) {
+                    *(int8_t *)var_A0 = var_B0;
+            }
+            if (var_A8 != 0x0) {
+                    *(int8_t *)var_A8 = var_AF;
+            }
+    }
+    var_104 = var_AC;
+    if (**___stack_chk_guard == var_30) {
+            rax = var_104;
     }
     else {
             rax = __stack_chk_fail();
