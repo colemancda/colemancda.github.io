@@ -10,19 +10,21 @@ Apple's solution to the problem is to ship a specific version of the standard li
 
 Well the answer is that Xcode compiles the Swift Standard Library right into your command line tool. While this may seem like a good solution, it will require you to build all of your Swift code with the command line tool. This makes linking against frameworks impossible, or does it? The solution to the issue is to mimick the app bundle structure. And what better way to do that then to create a bundle? But some steps must be followed in order to successfully link your command line tool and frameworks against the Swift Standard Library.
 
-###1. Create an Objective-C command line tool and change the Search Paths
-
-Not Swift. You can create a Swift framework for the code you'd put in your command line tool, but the tool itself must not compile any Swift code. Doing so will confuse the linker and make it see duplicate declarations of the Swift library (one in the shipped .dylib, another embedded in the command line tool).
+###1. Create a Swift command line tool and change the Build Setttings
 
 ![Embedded Frameworks Screen Shot 1]({{ site.url }}/images/embeddedframeworkswiftcommandlinetool1.png)
-
 
 - Runpath Search Paths: 
 {% highlight swift %}
 
-Debug: $(inherited) @executable_path/../Frameworks @executable_path/$(PRODUCT_NAME).bundle/Contents/Frameworks
-Release: $(inherited) @executable_path/../Frameworks
-{% endhighlight %}
+Debug: `$(inherited) @executable_path/../Frameworks @executable_path/$(PRODUCT_NAME).bundle/Contents/Frameworks`
+Release: `$(inherited) @executable_path/../Frameworks
+{% endhighlight %}`
+
+- User Defined Settings:
+
+`SWIFT_FORCE_DYNAMIC_LINK_STDLIB: YES`
+`SWIFT_FORCE_STATIC_LINK_STDLIB: NO`
 
 ###2. Create a bundle and change the Build Settings
 
@@ -58,4 +60,4 @@ You can also optionally hide the scheme of your command line tool since it canno
 
 - Debug Executable: ```YES```
 
-Now you can write your Swift code in a framework and embed it in the bundle for use in your command line tool. You can check out [PedidoServerDaemon](https://github.com/colemancda/Pedido/tree/master/PedidoServerDaemon) to see an example of this working.
+Now you can write your Swift code in a framework and embed it in the bundle for use in your command line tool. You can check out [PureSwift/GATT](https://github.com/PureSwift/GATT) to see an example of this working.
