@@ -26,8 +26,6 @@ Seasoned iOS Developer experienced in designing and developing custom applicatio
 
 * GitHub: [colemancda](https://github.com/colemancda)
 
-* Twitter: [@colemancda](https://twitter.com/colemancda)
-
 * LinkedIn: [Alsey Coleman Miller](https://www.linkedin.com/in/colemancda/)
 
 ----
