@@ -4,7 +4,7 @@ layout: default
 
 # 2020
 
-- [Anectodas de nuestra civilización moderna, su relación con Peru, y lo que pudo ser](2020-10-25-es-peru-desarrollo)
+- [Anectodas de nuestra civilización moderna, su relación con Peru, y lo que pudo ser](2020/10/25/es-peru-desarrollo)
 
 # 2018
 
