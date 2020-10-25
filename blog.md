@@ -2,6 +2,10 @@
 layout: default
 ---
 
+# 2020
+
+- [Anectodas de nuestra civilización moderna, su relación con Peru, y lo que pudo ser](2020-10-25-es-peru-desarrollo)
+
 # 2018
 
 - [Hacking IOBluetooth](2018/03/25/Hacking-IOBluetooth)
