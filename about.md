@@ -6,13 +6,13 @@ layout: default
 
 <img class="profile-picture" src="images/avatar.jpg">
 
-Seasoned iOS Developer experienced in designing and developing custom applications ranging from home automation, to social and business apps. Works well independently as a Freelancer and in teams of all sizes. Anticipates customer needs and meets project requirements. Skilled in cross-cultural communication. Natural learner. In the top 1% most active open source Swift contributors on GitHub (4500+ commits and 1500+ stars in 2016). Contributed to Swift compiler, reverse engineered Apple’s Foundation framework and wrote clone of UIKit for Linux. Also loves Hackintoshes.
+Seasoned iOS Developer experienced in designing and developing custom applications ranging from home automation, to social and business apps. Works well independently as a freelancer and in teams of all sizes. Anticipates customer needs and meets project requirements. Skilled in cross-cultural communication. Natural learner. Contributed to Swift compiler, reverse engineered Apple’s Foundation framework and reimplemented CoreBluetooth for Linux.
 
 ----
 
 ## Skills
 
-- Languages: C (5 years), Objective-C (5 years), Swift (3 years)
+- Languages: C (8 years), Objective-C (8 years), Swift (6 years)
 
 - Platforms: macOS, iOS, watchOS, tvOS, Linux
 
@@ -34,9 +34,15 @@ Seasoned iOS Developer experienced in designing and developing custom applicatio
 
 ## Experience
 
+### Racepoint Energy — February 2018 - Present
+
+#### Embedded Linux Engineer; July 2017 - January 2018
+
+Developed libraries, daemons and command line tools in C and Swift for home automation products. Worked extensively with Bluetooth LE, Linux and HomeKit.
+
 ### Ring
 
-#### Senior iOS Developer; July 2017 - Present
+#### Senior iOS Developer; July 2017 - January 2018
 
 Pure Swift evangelist and developer. Working on cross-platform open source Swift libraries, refactoring and improvements for Ring's iOS codebase (as featured on ABC’s Shark Tank, previously called DoorBot).
 
