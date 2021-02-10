@@ -2,6 +2,10 @@
 layout: default
 ---
 
+# 2021
+
+- [Swift on VS Code](2021/01/09/swift-vscode)
+
 # 2020
 
 - [Anectodas de nuestra civilización moderna, su relación con Peru, y lo que pudo ser](2020/10/25/es-peru-desarrollo)
