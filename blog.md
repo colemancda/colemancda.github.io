@@ -2,6 +2,10 @@
 layout: default
 ---
 
+# 2022
+
+- [WWDC22: AppIntents framework and the future of Swift in Apple’s developer tools](2022/09/23/wwdc22-appintents)
+
 # 2021
 
 - [Swift on VS Code](2021/01/09/swift-vscode)
