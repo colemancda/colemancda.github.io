@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WWDC22: AppIntents framework and the future of Swift in Apple’s developer tools"
-date:   2021-01-09
+date:   2022-09-23
 ---
 
 # WWDC22: AppIntents framework and the future of Swift in Apple’s developer tools
